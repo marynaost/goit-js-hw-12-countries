@@ -6,7 +6,9 @@
   "homepage": "https://marynaost.github.io/goit-js-hw-12-countries",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "handlebars": "^4.7.7",
     "lodash.debounce": "^4.0.8"
   }
